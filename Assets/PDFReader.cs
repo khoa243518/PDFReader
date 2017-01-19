@@ -5,7 +5,12 @@ using System.IO;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using System.Text;
-
+public enum TypeFile
+{
+	pdf,
+	txt,
+	html
+}
 public static class PdfTextExtractor1
 {
 	public static string pdfText(string path)
@@ -24,13 +29,25 @@ public static class PdfTextExtractor1
 public class PDFReader : MonoBehaviour {
 	public string path= @"head_first_design_patterns";
 	Dictionary<string,int> dictionary= new Dictionary<string,int>();
+	public TypeFile type;
 	// Use this for initialization
 	void Start () {
 		DebugTime ();
 		//string path= @"head_first_design_patterns.pdf";
 		//string path= @"D:\games-client\pdf.pdf";
-		path+=".pdf";
-		string s= PdfTextExtractor1.pdfText (path);
+		string s = "";
+		if (type == TypeFile.pdf) {
+			path+=".pdf";
+			s = PdfTextExtractor1.pdfText (path);
+		} else if(type ==TypeFile.txt) {
+			path+=".txt";
+			s = System.IO.File.ReadAllText(path);
+		} else {
+			path+=".html";
+			s = System.IO.File.ReadAllText(path);
+		}
+
+		s = s.Replace ("’", "'");
 		s = s.ToLower ();
 		string[] words = s.Split (' ','\n','\t','=','+','{','}','-','(','*',')',';','.',',','@','\"','?','[',']','_',':');
 		//another list
