@@ -49,7 +49,7 @@ public class PDFReader : MonoBehaviour {
 
 		s = s.Replace ("’", "'");
 		s = s.ToLower ();
-		string[] words = s.Split (' ','\n','\t','=','+','{','}','-','(','*',')',';','.',',','@','\"','?','[',']','_',':');
+		string[] words = s.Split (' ','\n','\t','=','+','{','}','-','(','*',')',';','.',',','@','\"','?','[',']','_',':','!','“','”');
 		//another list
 		string text = System.IO.File.ReadAllText(@"text.txt");
 		string[] myWords = text.Split (' ');
