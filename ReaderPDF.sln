@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{99EF21A2-B057-3D9F-6EE4-C01593825120}") = "ReaderPDF", "Assembly-CSharp.csproj", "{35E33E9A-DF5C-2426-04D2-4449733C74EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E33E9A-DF5C-2426-04D2-4449733C74EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E33E9A-DF5C-2426-04D2-4449733C74EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E33E9A-DF5C-2426-04D2-4449733C74EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E33E9A-DF5C-2426-04D2-4449733C74EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
