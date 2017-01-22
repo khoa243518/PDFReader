@@ -11,9 +11,30 @@ public class SortingAlphabet : MonoBehaviour {
 		string[] s = text.Split (' ');
 		Array.Sort (s);
 		text = "";
-		foreach (string w in s)
-			text += (w+ " ");
+		int endline=0;
+		foreach (string w in s) {
+//			endline++;
+//			if (endline >= 100) {
+//				text += "\n";
+//				endline = 0;
+//			}
+			text += (w + " ");
+
+		}
+		text = text.Remove (text.Length - 1);
 		System.IO.File.WriteAllText (@"text.txt", text);
 	}
-
+	public static void AddToVob(string vob)
+	{
+		string text = System.IO.File.ReadAllText(@"text.txt");
+		text += (" " + vob);
+		System.IO.File.WriteAllText (@"text.txt", text);
+	}
+	public static void RemoveToVob(string vob)
+	{
+		string text = System.IO.File.ReadAllText(@"text.txt");
+		int index = text.LastIndexOf (vob);
+		text = text.Remove (index-1, vob.Length+1);
+		System.IO.File.WriteAllText (@"text.txt", text);
+	}
 }
