@@ -9,7 +9,7 @@ public class Item : MonoBehaviour {
 	public void InitItem(string _text,int time)
 	{
 		text = _text;
-		transform.GetChild (1).GetComponent<Text> ().text = text;// +  ( text.Length>=4 ?char.ConvertToUtf32(text,3).ToString()  :".").ToString();
+		transform.GetChild (1).GetComponent<Text> ().text = text;//	 +  ( text.Length>=4 ?char.ConvertToUtf32(text,3).ToString()  :".").ToString();
 		transform.GetChild (2).GetComponent<Text> ().text = time.ToString ();
 		transform.GetChild (0).GetComponent<Image> ().color = new Color (0.9f, 1f, 0.9f, 1f);
 	}
