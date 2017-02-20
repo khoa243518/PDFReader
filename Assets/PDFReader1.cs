@@ -100,9 +100,9 @@ public class PDFReader1 : MonoBehaviour {
 
 	
 		mainUI.transform.GetChild(0).GetComponent<Text>().text = "Words: " + count.ToString();
-		mainUI.transform.GetChild (1).GetComponent<Text> ().text = "Words: " + vob.ToString();
+		mainUI.transform.GetChild(1).GetComponent<Text> ().text = "Words: " + vob.ToString();
 		mainUI.transform.GetChild(2).GetComponent<Text>().text = ("Expert:" + ((float)expert/count).ToString("p1"));
-		mainUI.transform.GetChild(3).GetComponent<Text>().text = ("Diffical:" + (((count*0.9f)-expert)/Mathf.Sqrt(count)).ToString("n2"));
+		mainUI.transform.GetChild(3).GetComponent<Text>().text = ("Diffical:" + (((count*0.95f)-expert)/Mathf.Sqrt(count)).ToString("n2"));
 		mainUI.transform.GetChild(4).GetComponent<Text>().text = ("Vob:" + myWords.Length);
 		int percent = 0;
 		int take100 = 100;
@@ -120,12 +120,11 @@ public class PDFReader1 : MonoBehaviour {
 					break;
 			}
 		}
-		Debug.Log (System.DateTime.Now.Ticks);
 	}
 
 	bool CheckInvalid(string w)
 	{
-		if (w.Length <= 2 || w.Length >= 15)
+		if (w.Length <= 2 || w.Length >= 20)
 			return false;
 		if (w.Any (char.IsDigit))
 			return false;
