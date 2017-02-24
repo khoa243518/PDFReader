@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PDFReader1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AddAllToOne.cs">
     <Files>
-      <File FileName="Assets\PDFReader1.cs" Line="78" Column="28" />
+      <File FileName="Assets\PDFReader1.cs" Line="1" Column="1" />
       <File FileName="Assets\Item.cs" Line="1" Column="1" />
+      <File FileName="Assets\AddAllToOne.cs" Line="18" Column="30" />
+      <File FileName="Assets\SortingAlphabet.cs" Line="25" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
