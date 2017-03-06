@@ -16,7 +16,7 @@ public class AddAllToOne : MonoBehaviour {
 		if (!File.Exists ("Sub.txt"))
 			File.Create ("Sub.txt");
 		File.WriteAllText ("Sub.txt", allText);
-
+		Debug.Log ("Fished");
 	}
 	
 	// Update is called once per frame
