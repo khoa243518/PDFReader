@@ -1,0 +1,925 @@
+Artifact Tier List Edit
+Tier 1 Edit
+These artifacts will help you push further, faster, giving you more equipment and skill points, which give the most bonuses early on.
+
+Book of Shadows (increase relics from prestige)
+Heroic Shield (boss gold)
+Axe of Muerte (crit chance, high AD)
+Furies Bow (pet damage)
+Fruit of Eden (melee hero damage)
+Charm of the Ancient (spell hero damage)
+The Sword of Storms (ranged hero damage)
+Blade of Damocles (all hero damage)
+Tier 2 Edit
+These are almost as good as the tier 1 artifacts, but not quite. Same idea, helping you push further faster.
+
+Heavenly Sword (All artifact damage)
+
+Parchment of Foresight (warcry effect)
+
+Aegis (warcry duration)
+
+Bringer of Ragnarok (fire sword effect)
+
+Glacial Axe (fire sword duration)
+
+Hero's Blade (helmet bonus)
+
+Lethe Water (weapon bonus)
+
+Amethyst Staff (Slash equipment bonus)
+
+Divine Retribution (all damage)
+
+Tier 3 Edit
+These give good bonuses or good AD so are good to have.
+
+Staff of Radiance (reduce hero cost)
+
+Book of Prophecy (increase gold)
+
+Invader's Shield (good AD)
+
+Forbidden Scroll (critical strike duration, good AD)
+
+Ring of Fealty (HoM duration, good AD)
+
+Laborer's Pendant (HoM effect)
+
+Swamp Gauntlet (Shadow Clone duration, good AD)
+
+Helmet of Madness (Chest equipment bonus)
+
+Tier 4 Edit
+Not as good as tier 3, mainly useful for a bit more AD
+
+Titan's Mask (Heavenly Strike effect)
+
+Elixir of Eden (Shadow Clone effect)
+
+Titan Spear (HoM cost)
+
+Oak Staff (fire sword cost)
+
+The Arcana Cloak (Warcry cost)
+
+Egg of Fortune (Chesterson chance)
+
+Chest of Contentment (Chesterson gold)
+
+Tier 5 Edit
+Useless effects or bad AD/cost scaling.
+
+Stone of the Valrunes (titan gold)
+
+Hunter's Ointment (shadow clone cost)
+
+Infinity Pendulum (Heavenly Strike cost)
+
+Glove of Kuma (Critical Strike cost)
+
+Drunken Hammer (tap damage)
+
+Divine Chalice (chance for 10x gold)
+
+Game Mechanics Edit
+Sword Master and SkillsEdit
+1. Sword Master Edit
+Like in TT1 your sword master is your main hero who deals your tap damage when you tap the screen. Upgrading him works a little differently in this game though: Rather than scaling up every level, your tap damage per level is multiplied by 2x (or more) every 20 Sword Master levels, starting from 10. Your sword master will be your main source of damage for at least the first 75 stages. Like in TT1, you unlock skills when you level your sword master.
+
+2. Skills Edit
+The Skill system is revamped in this game. Instead of having skills with an individual cooldown, you have a mana pool, and all skills have a mana cost. When you use a skill, you use up your mana. Mana regenerates over time, at a base rate of 2 per minute. This can be increased by certain heroes and by Pets. The skills are: Heavenly Strike: Level 100. Deals a burst of damage. This is quite a useless skill, in my opinion. I've quite literally never used it. Save your mana for other skills. Critical Strike: Level 200. Increases your crit chance. Again, quite useless. Not worth the mana cost. Hand of Midas: Level 300. Gives you gold per tap. This is an excellent skill. It will be your main source of gold for the early game. Use it on bosses for more gold, especially bosses of stages ending in 5 or 0. (Example, 95, 100, 105 etc.) Flame Sword: Level 400. Multiplies your tap damage. Again, excellent. This will be one of your main progression tools throughout the whole process of getting to stage 800+. Warcry: Level 500. Increases your heroes' attack speed. Another excellent skill, great for killing those bosses which are too strong otherwise - once your hero damage starts outpacing your tap damage. Shadow Clone: Level 600. Summons a clone which deals X times your tap damage every second. So far (to stage 800+) this has been useless, it might be useful later in the game though. Once you level your sword master to 600, you can prestige. Like in TT1, prestiging resets your stage progress and gives you relics. There is no bonus from hero levels, only from the stage you reach. You keep all pets, equipment, artifacts, perks when you prestige.
+
+3. Heroes Edit
+Like in TT1 you can buy heroes to attack the titans automatically. Heroes scale similarly to the sword master: instead of having skills that increase their own damage as in TT1, they get damage multipliers at first every 20 levels starting from 10. They keep getting these multipliers as long as you level them, but the multipliers are spaced out more the higher you go (eg. every 30 levels, then 40, etc.) Heroes have attack types. There are Melee, Spell, and Ranged heroes. There are many multipliers to a single type of heroes' damage. Quite early on, you will find yourself specializing in one of the types of heroes, depending on your equipment and pets. However, at first it is efficient to level all the heroes regardless of their type as there will be certain heroes that are efficient at each stage. More on this in the Strategy section. Heroes also have skills that you can buy when you reach a certain level. They are at levels 20, 40, 60, 100, 200, 500, 1000. All the heroes' skills affect you globally. They can give gold multipliers, damage multipliers, extra chesterson and crit chance, and damage for a particular hero type. Most of the skills are worth getting, but some are better than others.
+
+EquipmentEdit
+Equipment is a new mechanic in TT2. Like customization in TT1, equipment changes the look of your character, as well as providing bonuses. However, the bonuses from equipment are much more powerful than customization were, and you can't buy it with diamonds. Instead, you receive a piece of equipment every 20 levels starting at 56, the first time you reach that stage. So the first time you reach 56, 76, 96, 116, 136, 156... etc, you will see an equipment drop beside your swordmaster. Tap on it to pick it up, and it will appear in the equipment tab. There are 5 types of equipment: Swords. These have damage bonuses, for example All Damage, All Hero Damage, Crit Damage. Helmets. These give bonuses to an individual hero type, for example Melee Hero Damage. Chests. These give bonuses to gold. Either Chesterson Gold or All Gold. Auras. These give miscellaneous bonuses. There is Reduced Titan HP, Chesterson Chance, Crit Chance. Slashes. These give bonuses to Tap or Pet damage. The best types of equipment are Swords and Helmets, with Chests being important also a little later. Initially, Slashes can also be very good as you will be using Tap Damage for a little while, until you reach the stage where your heroes take over. Later, slashes (for pet damage) will also become important.
+
+PetsEdit
+Pets are another new mechanic in TT2, and they are extremely important. Every single pet is useful, and I'll go through what pets to look out for later on. Pets do three things. They appear next to your main hero, and do a lightning attack every 20 taps. The damage of this attack is a multiple of your tap damage. Once you get 500 total pet levels, pets will also attack by themselves. Pets also provide an active or a passive bonus. You can have 1 pet active at a time, and you will receive its active bonus. Here is a list of all the pets and their bonuses. Pets have a level. You get pet levels, and new pets, by receiving and opening eggs. You receive one egg every four hours, and you can store up to 2. You can also buy pets in the shop, and you can receive eggs from your daily bonus and as tournament rewards. Once a pet hits level 5, you will receive its passive bonus when it is not active. The passive bonus is a percentage of its active bonus, as well as a bonus to pet damage. Getting as many pets as possible to at least level 5 is very important as your pet damage will start to become a main source of your damage starting around stage 550 (although certain combinations of artifacts, equipment and pets will make your pet damage overtake hero damage before this, for most people pet damage only starts becoming great after that stage.)
+
+Pet Damage Mechanics Edit
+Your pet damage is affected by several factors. Your total tap damage (combined from sword master and the +0.1% tap damage from heroes skills that certain heroes have) Your current pet's pet damage multiplier (higher level pet = more multiplier) Your other pets' passive pet damage multiplier (once they hit level 5 or higher) Your critical strike chance and damage. (Some Aura equipments give crit chance, some weapons give crit damage) Any bonuses from equipment. (There are Slash equipments that give multipliers to pet damage) The bonus from Furies Bow. Increasing any of these factors increases your pet damage. You might have to switch back and forth between pets once when you get a new bonus to get it to apply.
+
+
+ArtifactsEdit
+Just like in TT1, when you prestige you receive relics which can be used to purchase artifacts. Artifacts have an Artifact Damage bonus as well as another effect, usually a multiplier to something. Take a look at the artifact list above once you've done your first prestige.
+
+PerksEdit
+Like in TT1 there are perks, which you can purchase with diamonds and use to give various effects. They are: Make It Rain: gives gold Mana Potion: refills mana (like cooldown reset from TT1 except a flat 100 diamond cost) Double Damage: Doubles all damage, tap, hero and pet for 8 hours. Doom: Instantly kills the current titan. Power of Swiping: Swipe to tap at max speed (20 taps per second) for 8 hours. Clan Crate: Gives a crate which gives more gold than Make It Rain to everyone in your clan. Clans are a new mechanic that is about to be explained next. The most useful perk is probably double damage, use it for pushing further in tournaments if you can spare the diamonds. You can also get free perks from tournament rewards or daily bonuses.
+
+ClansEdit
+Clans are a new feature, where you can join a group of up to 50 players. The option to join or create a clan appears once you reach stage 20-25. Once you join a clan, a ship will appear on your screen. This ship does 10x your hero DPS every 10 seconds. Joining a clan is incredibly important as this ship will help you immensely against bosses. It quite literally doubles your hero DPS. There is also a Clan Boss, which you attack as a clan. You can fight it for 30 seconds every hour, or more often if you spend diamonds. The damage you do is the highest stage you've prestiged at, or 50, whichever is more. Once you defeat a clan boss, your clan damage multiplier will increase and a new boss will spawn after 6 hours. The Clan damage multiplier gives you a bonus to all damage which is quite significant. It's important to help kill the clan bosses as much as you can.
+
+ShopEdit
+The shop has three items which you can purchase with diamonds, and resets daily. It first becomes available once you reach somewhere around stage 55-70 IIRC. Most of the time it will sell pets, of which you can purchase 1 or sometimes 2 levels at a time. Most of your diamonds should be spent on purchasing pets as they're very important.
+
+The Fairy Edit
+Like in TT1 there is a fairy who comes along every so often and drops gold or gives you skills. If you watch an ad you can also get free Hand of Midas, 5 diamonds, gold, or a mana refill. Because of the possibility of mana refill it's best to keep your mana low. However, mana refill is quite rare so it's not a huge deal.
+
+Tournaments Edit
+Like in TT1 there are tournaments every Sunday and Wednesday which give prizes based on your placing. The prizes are different depending on which bracket you're in. The brackets are:
+
+1-200
+201-500
+501-1000
+1001-1800
+1801-3000
+3001-3000000
+Skill TreeEdit
+Another new mechanic in TT2 is that you have a skill tree, which gives various effects to your pets, heroes, skills, and character. You receive a Skill point every 50 levels starting from 50. At levels 50, 550 and 1050 (and presumably 1550 etc) you receive one skill point immediately, but for the rest you have to prestige to receive them once you've reached a stage that's a multiple of 50. Like equipment, you only get a skill point the first time you reach that stage.
+
+Pet Skills (Actives, left tree) Edit
+Pet: Lightning burst. This skill causes your pet to occasionally move to the center and start to glow. When that happens, keep tapping until all three circles in the triangle are filled. Your pet will glow white. Tap on it to deal a burst of damage based on your pet damage. This skill only works on normal titans, not bosses. Pet: Heart of Midas. When you have this skill, your pet will sometimes have a glowing gold circle around it. When you tap on it, it gives you gold based on the current monster. Gives more gold if you use it on bosses and Chestersons. Pet: Flash Zip. When you have this skill, your pet will turn into a glowing white circle on boss fights. When you tap your pet, it will "zip" to a new location. Once you've done this about 5-6 times, it'll go to the top center, above the boss. Tap it to deal a lot of damage. Ultra Heroes. When you have this skill, one of your heroes will sometimes glow. Tap on it to do damage based on your hero DPS. There will be four heroes in a row to tap on once the skill activates. In general, anything that says "focus damage" is something you have to tap on to activate.
+
+Strategy GuideEdit
+Your overall goal for now is to get to stage 800 as fast as possible, since that's when you get Intimidating Presence for -1 titans per stage, which increases your prestige speed substantially. (You take two levels in it once you hit 800 for -2. Combined with splash damage from Kit this gives you 2 titans + boss per stage in the early levels.)
+
+1. The first prestige Edit
+The first prestige is very hard, harder than TT1. It'll take you 6-16 hours, possibly 4 hours if you use double damage. Your goal is to get to stage 106 and get your sword master to 600. At first, focus everything on upgrading your swordmaster for tap damage. Don't buy any skills until Fire Sword if you can. This is because buying a skill adds around 70 mana so you can get free skill usages by using your mana then buying a new skill. Heavenly Strike and Crit Chance are useless so there's no point buying them to actually use. It will slow down a lot around 70-75. Keep pushing until you can't beat the boss (should be around 80-95), then either use fire sword to get to a stage ending in 0 or 5, or if you're already there, skill Hand of Midas. Enter the boss fight, then use hand of midas on it. Hand of Midas locks in the amount of gold you get per tap based on the current monster you're fighting when you activate it. Bosses give a lot more gold than normal titans, so activating it while fighting a boss locks in a much higher gold amount. This means that if the boss fight ends you still get the increased gold per tap for the remaining duration, even tapping on a regular titan. Use the money to upgrade your sword master. Any left over, buy heroes to get their skills, especially Sophia as she gives multipliers to tap damage. You pretty much have to keep doing this until you reach 105. When you're out of mana and need to use a skill, buy a new skill. If you've already got them all then you have to wait for your mana to recover. If you've already got a new pet and it's Fluffers, switch to that for extra mana regen, then close your game and do something else for a while. Once you hit 105, midas 1-2 times on the 105 boss to get the gold to upgrade your sword master to 600, then kill the 105 boss. Prestige at 106 for 4 relics, which you can use to buy two artifacts. Buy only one first, then salvage it if it's tier 4 or 5 on the tier list. Buy the next when you run out of diamonds or you get something tier 3 or higher With your first two skill points take Lightning Burst and Flash Zip.
+
+2. Getting to 150 Edit
+Once you get your first two artifacts you should find it significantly easier. Depending on what you get, either prestige next at 116 (for the equipment drop and 6 relics, enough for the next artifact) or 136 if you got a lot of AD (eg Axe of muerte + another 150%+). Then 3rd, push to 136 if you didn't before for the equipment. 130-135 is about the breakpoint where hero damage starts outdoing sword master tap damage. To get to 150 and beyond, you'll be using mostly hero DPS from here. If you got an All Hero damage sword and a Melee hero helmet, that is the ideal situation as melee heroes are the best up until around 230. For the most damage per gold, you usually want to level the highest hero you can afford to get to level 310-370. This is usually a "middle" hero, 3-5 back from the latest one you can afford. This is because all the multipliers start stacking up. At first, heroes only get x2 every 20, while starting from 110, they get x3 and x4 at 210 and 310. At first this will likely be Rosabella, then Gulbrand, Davey, Rhys, etc. You'll have to get a feel for it yourself, do the calculations about what will be the best damage per gold. Once you hit 150, prestige and get Stronger Arms skill with the skill point for x2 melee hero damage.
+
+3. Getting to 250 Edit
+With your enhanced melee hero damage, Gulbrand, Rhys and Cossette will be your main damage sources until 250. If you have multipliers for the other hero types you can use them too. The strategy is the same, level to 370-400 and get the next hero. Remember to upgrade earlier heroes to 500 when the cost is insignificant, for their skills (especially the hero type you're focusing on.) You might have to prestige a few times, maybe 5 or so. Try to push the next equipment stage each time you prestige unless you already have good equipment as you could get something that'll speed things up tremendously. Or you could get 5 Chesterson chance auras, but that's RNG for you. Once you hit 200, take Pet: Heart of Midas. This will be your main source of gold. Use it like HoM skill, on x5/x0 bosses. When you're pushing your max stage, you might still have to use Hand of Midas as well as Pet Midas (especially if you have Laborer's Pendant and Ring of Fealty) but Pet Midas is a great source of "free" gold that speeds up your progression significantly. Once you get 250, take Hyper Magic for spell hero damage. Spell heroes are the best from now on, although you can also do fine with ranged, but you need to take Hyper Magic for the ranged skill anyway.
+
+4. 300 Edit
+250-300 is the first real "wall" as it will take you a few prestiges to get there unless you get some great equipment. All you can do is quick runs, buy new artifacts and upgrade your artifacts.
+
+Prestiging strategy Edit
+Use Kit (a Pet) in the beginning stages for splash damage. Splash damage lets a percentage of your overkill damage from the titan you're fighting carry over to the next, and if it kills that one, the next, and so on. You can kill up to 4 titans in one hit with splash damage. Doing this speeds up early stages tremendously since if you're killing 4 titans with one hit you've effectively reduced the titans per stage to 3. Switch to your damage pet when you stop one-shotting titans. Don't go to your max stage every time if you're just farming relics. It gets very slow as you approach your max stage so instead, go to the highest stage you can without using any skills (maybe 1-2 midas) then warcry/firesword a few times. Remember not to buy any skills until you need the mana. Hold off on buying anything until HoM, and only buy it when you're about to use it. Same with Fire Sword/Warcry. Usually what I did was when things started slowing down, Hand of Midas on the closest x5/x0 boss. That usually got me at least 10 stages. Then buy Fire Sword, Hand of Midas again on an x0,x5 boss. Then once you slow down again, Fire Sword 2-3 times, upgrading heroes as you go for more DPS. It also helps a lot if you have Bringer of Ragnarok for Fire Sword effect. If you don't have it, you may have better luck with just using warcry instead. Buy warcry next, then you can use a little trick. When you warcry, your tap damage from heroes increases a lot (due to Kronus' skill +0.1% Tap Damage From Heroes). Use warcry, then when there's 1 second left use fire sword. Fire Sword keeps the increased damage from warcry for its entire duration, so you can speed through many stages using this combo. Buy Critical Strike, Heavenly Strike and Shadow Clone to recover mana. You should be able to get 3-4 warcry+fire sword combos, pushing you around 3-5 stages each. If you have the enhancer artifacts for Fire Sword and Warcry you'll be able to get even more.
+
+5. 300-400 Edit
+300-400 is even slower than 250-300. Keep prestiging, buying new artifacts and upgrading, and pushing to the next equipment stage when you can. If you get something great, you can often keep going to the next equipment point. For skills, it now depends on what you have equipment for. In terms of getting to 550, you can do it with ranged, melee, or spell. Just specialise in one. Melee or spell are slightly better than ranged, with spell being the best overall. However you will do just fine with ranged in 300-500. You will likely have to respec your skills at least once (certainly once you get to 800) so save some diamonds for that. Depending on your multipliers and the hero type you're specialising in, it can become more efficient to level your latest hero rather than getting middle ones to 370. For example if you have a ton of melee you can possibly skip straight to Jayce. You'll have to experiment with what works for you as it's dependent on your individual gear, skills and artifacts. From this point forward, Pet: Heart of Midas is your best tool for pushing your max stage. Consider upgrading it to level 2 since that basically doubles your gold gain. However if you really need another hero multiplier skill you can consider that instead (although I would take Heart of Midas level 2 over a third level in a hero multiplier skill.)
+
+6. 400-550 Edit
+Getting through this part really depends on your equipment RNG. If you get absolutely nothing, you're kinda screwed. All you can do is prestige and upgrade artifacts, get your pet levels up, and try to push the next equipment point hoping for something great. At this stage, depending on your pets, artifacts and equipment, pet damage (so tapping) can come back into play, although for most people it won't be until around 560 that you have to tap. If you're spell, Lady Lucy is more efficient to level as soon as you get her rather than focusing on getting Cass to 370. The good thing is, once you can get to 550 you're usually very close to being able to hit 800. Once you hit 550, respec your skills as follows: Pet: Lightning Burst level 1 Pet: Heart of Midas level 2 Pet: Flash Zip level 1 Gold splitter level 1 Stronger Arms level 2 Hyper Magic level 2 Pet Evolution level 1 For a total of 13 skill points. You don't need ranged damage as there are no ranged heroes until after 800. If you don't have this many skill points you can just take Pet: Heart of Midas level 1. Do maybe 2-5 more prestiges, upgrade your artifacts until you can comfortably hit 480 with minimal skill usage. Then, you're (probably) ready for the push to 800! I recommend doing it during a tournament as then you'll get something for pushing so far. The 800 push is going to take a while (12 hours +) but you'll get there.
+
+7. 550-800 Edit
+You can do this all at once, once you have the skills as above and some OK equipment. Also, this is where the tier 1-2 artifacts come into play. If you have many of these, they'll help a lot. Most helpful are Charm of the Ancient + spell hero helmet, Fruit of Eden + melee hero helmet, all hero damage weapon, High level all hero damage pet (and/or high spell + melee pets), high level gold pet, high level mana regen pet. If you have all that you'll be fine. If you don't, you may have to grind a few more prestiges. Don't feel bad about doing that though as even once you hit 800 your efficient prestige point is still going to be around 550 for a little while. Key heroes: Lady Lucy (spell) at stage 440-450. Jazz (spell) at stage 560 Maple (melee) at stage 700. You want to buy the newest hero as soon as you can afford it as they each give way more damage than the previous.
+
+How to push stages Edit
+Push as far as you can without using skills. Skill only fire sword (if you have BoR) and you can use it whenever you're at full mana to speed up this part a bit, but don't skill anything else yet. This should be quite far, as with pet midas, you can farm gold on bosses, and pet zip helps you take down bosses that would otherwise be too strong. Remember to evolve all the early heroes and get Lala's level 40 skill for more tap damage from heroes. Actually, upgrade Lala and Aya to 200 as soon as it's reasonable as they give gold bonuses which are extremely helpful. Once you can't advance without using skills, skill warcry and use warcry + fire sword combo to push 5 stages to the next x5/x0 boss. Farm midas on that boss, by switching to mana regen pet, then when pet midas is up, switch to gold pet, fight the boss, midas, leave the boss fight, switch to mana regen. Keep doing this until you can either pass the boss without skills or you have enough mana for another fire sword + warcry. You can get in 3-4 pet zips depending on RNG so you might have to retry the boss fight a few times if pet zip doesn't start early. Just fight/leave until it starts within the first 1 second. Hopefully you'll get some helpful equipment during the push. Once you get 800, use the skill points to get 2 in Intimidating Presence, x4 for all hero types (since the next after Maple who you'll use to get to 800 is ranged.) You'll stop specialising and hopefully have the gear to make any hero type work after this point.
+
+Pets Guide Edit
+Every pet is useful. Having as many as possible at level 5+ is a great boost, and you want the important ones as high as possible. Nova/Demos: Gives all damage. Always useful, definitely buy a level for 25 diamonds in the shop. Tempest/Toto: All hero damage. If you get one of these high it can be your general purpose pet for quite a while. Otherwise you'll need 3 pets, one each for spell melee and ranged. Bubbles/Polly: All gold. Extremely useful for pushing, you want at least one of these to be high. Fluffers: Mana regen. Always buy a level when you can, again, really good for pushing faster. Hamy/Phobos: Tap Damage. Good early on, and definitely buy a level for 25 if you're below stage 200. However, later on their bonus becomes pretty much useless as it doesn't apply to tap damage from heroes, so you don't need to keep buying these. Cerberus/Basky, Harker/Zero, Scraps/Mousy: hero type damage. A substitute for Tempest/Toto, also their bonus per level is more so you might not need as high a level if you use these instead. Kit: Splash damage. The best pet for prestiging quickly. With Intimidating Presence, you'll only be killing 2 titans + boss per stage, as the max titans you can kill at once with splash damage is 4. Definitely buy and upgrade for 25.
+
+FAQ Edit
+What should I use my diamonds on?
+A: Salvaging only the first 2 artifacts, or more if you want to spend money to buy diamonds. The bulk of your diamonds should go to pet levels. You can maybe buy a double damage perk for a tournament if you'll get enough as a reward. You'll also need some for skill respecs. Diamonds are more scarce overall than in TT1, and salvaging costs are higher.
+
+Every Sunday and Wednesday, a worldwide tournament is held for all players who have prestiged to compete in brackets of 200. 
+
+Contents[show]
+BracketsEdit
+Bracket #	Highest Level
+1	1-200
+2	201-500
+3	501-1,000
+4	1,001-1,800
+5	1,801-3,000
+6	3,001+
+Tournament bonusesEdit
+Description
+There is no bonus during this tournament.
+All heroes do 2x damage.
+All melee heroes do 3x damage.
+All ranged heroes do 3x damage.
+All spell heroes do 3x damage.
+Your taps will do 2x damage.
+You will regenerate 1 mana per minute.
+Your mana capacity will be increased by 50.
+You will have 40% chance of receiving double fairy rewards.
+Your critical hit chance will increase 10%.
+Tournament bonuses rotate in chronological order. The bonus will start at the beginning of the list when reached the last bonus.
+
+Tournament Prizes Edit
+Bracket 1 (1-200) Edit
+Rank	Prize				Rank	Prize
+1	
+250 Diamonds
+3 Weapon Upgrades
+3 Eggs
+2	
+150 Diamonds
+2 Weapon Upgrades
+2 Eggs
+3-5	
+100 Diamonds
+2 Weapon Upgrades
+2 Eggs
+6-10	
+50 Diamonds
+1 Weapon Upgrades
+1 Eggs
+11-20	
+50 Diamonds
+3 Rare Equipment
+1 Weapon Upgrade
+21-30	
+15 Diamonds
+3 Rare Equipment
+2 Perks
+31-40	
+10 Diamonds
+2 Rare Equipment
+2 Perks
+41-50	
+10 Diamonds
+1 Perk
+51-75	
+10 Diamonds
+1 Perk
+76-200	
+5 Diamonds
+1 Perk
+Bracket 2 (201-500) Edit
+Rank	Prize				Rank	Prize
+1	
+350 Diamonds
+4 Weapon Upgrades
+3 Eggs
+2	
+250 Diamonds
+3 Weapon Upgrades
+2 Eggs
+3-5	
+150 Diamonds
+2 Weapon Upgrades
+2 Eggs
+6-10	
+75 Diamonds
+2 Weapon Upgrades
+2 Eggs
+11-20	
+50 Diamonds
+1 Egg
+21-30	
+25 Diamonds
+3 Rare Equipment
+2 Perks
+31-40	
+20 Diamonds
+2 Rare Equipment
+2 Perks
+41-50	
+15 Diamonds
+1 Rare Equipment
+2 Perks
+51-75	
+15 Diamonds
+1 Rare Equipment
+1 Perk
+76-200	
+10 Diamonds
+1 Rare Equipment
+1 Perks
+
+Bracket 3 (501-1,000) Edit
+Rank	Prize				Rank	Prize
+1	
+400 Diamonds
+1 Fortune Weapon Upgrade
+3 egg
+2	
+300 Diamonds
+1 Fortune Weapon Upgrade
+2 egg
+3-5	
+200 Diamonds
+1 Fortune Weapon Upgrade
+2 egg
+6-10	
+100 Diamonds
+1 Fortune Weapon Upgrade
+2 egg
+11-20	
+50 Diamonds
+2 Weapon Upgrade
+1 egg
+21-30	
+25 Diamonds
+1 Weapon Upgrade
+2 perks
+31-40	
+20 Diamonds
+1 Weapon Upgrade
+2 perks
+41-50	
+15 Diamonds
+1 Weapon Upgrade
+2 perks
+51-75	
+15 Diamonds
+2 rare equipment
+1 perks
+76-200	
+10 Diamonds
+2 rare equipment
+1 perks
+Bracket 4 (1,001-1,800) Edit
+Rank	Prize				Rank	Prize
+1	
+450 Diamonds
+5 Weapon Upgrades
+1 Fortune Weapon Upgrade
+2	
+350 Diamonds
+5 Weapon Upgrades
+1 Fortune Weapon Upgrade
+3-5	
+250 Diamonds
+4 Weapon Upgrades
+1 Fortune Weapon Upgrade
+6-10	
+150 Diamonds
+3 Weapon Upgrades
+1 Fortune Weapon Upgrade
+11-20	
+100 Diamonds
+2 Weapon Upgrades
+1 Egg
+21-30	
+50 Diamonds
+2 Weapon Upgrades
+1 Egg
+31-40	
+25 Diamonds
+1 Weapon Upgrade
+1 Egg
+41-50	
+20 Diamonds
+3 Rare Equipment
+1 Egg
+51-75	
+15 Diamonds
+1 Egg
+2 Perks
+76-200	
+10 Diamonds
+1 Rare Equipment
+3 Perks
+Bracket 5 (1,801-3,000) Edit
+Rank	Prize				Rank	Prize
+1	
+500 Diamonds
+7 Weapon Upgrades
+1 Fortune Weapon Upgrade
+2	
+350 Diamonds
+5 Weapon Upgrades
+1 Fortune Weapon Upgrade
+3-5	
+250 Diamonds
+4 Weapon Upgrades
+1 Fortune Weapon Upgrade
+6-10	
+150 Diamonds
+3 Weapon Upgrades
+3 Eggs
+11-20	
+100 Diamonds
+2 Weapon Upgrades
+2 Eggs
+21-30	
+50 Diamonds
+2 Weapon Upgrades
+1 Egg
+31-40	
+25 Diamonds
+1 Weapon Upgrade
+1 Egg
+41-50	
+20 Diamonds
+3 Rare Equipment
+2 Perks
+51-75	
+15 Diamonds
+2 Rare Equipment
+2 Perks
+76-200	
+10 Diamonds
+1 Rare Equipment
+1 Perk
+Bracket 6 (3,001+) Edit
+
+InformationEdit
+Clans can be made by anyone at the cost of 200 diamonds. You can adjust the information as well as it's: visibility, whether it's private or public and have a stage requirement starting at 200 and going up in increments of 200.
+
+When In a clan you have access bonus damage starting at 10% which can increase by fighting a boss (read below).You also have the ability to purchase a clan crate at the cost of 500 diamonds which provides gold to everyone clan member.
+
+The clan boss when defeated provides even more bonus damage, however you only deal a set amount of damage per tap to it. It has an extremely large hp bar which you will need to whittle down over time, this boss can only be fought once per hour or you have the option to use 5 diamonds and do it again instantly. The more members you have in your clan the more damage each person does, they assist you by providing extra hits while you fight the boss and you shouldn't expect to deal much damage to this boss unless you have many members. Regardless though attempt to deal as much damage as you can whenever possible as it still gives you an idea of how you would do when you have more members
+
+Clan Code/name listingEdit
+Clan Name	Minimum Stage Required	Clan Info	Clan Code	Clan Quest	Other Information
+Randale	Stage 400	German Clan	p3d5y		
+French Frogs	Stage	French Clan	6244x		
+psykopat	Stage	French Clan	z7wq8		
+Pingu Boys	Stage	Global Clan	2p2q8	23	
+Tap Tapz	Stage	Global Clan	yg48w		
+BackStage Gamers	Stage 600		pk2x3		
+kumaland	Stage	Global clan	p5b7m	22
+
+New to Tap Titans 2, are pets that fight alongside you. You can have one active pet at a time. Pets deal pet damage every 20 taps. When no tabs are open, you can follow the triggering process right above your hero tap damage, so the more often you tap, the sooner the pet damage will trigger. Pets also give perks like extra damage from heroes, extra gold drops, and extra mana regen. When your pet(s) reach level 5, they give passive perks, even when they aren't being used as your active pet.
+
+Acquiring/Leveling Pets:
+
+Every 4 hours, a random pet hatches from an egg. Up to 2 eggs can be stored while the game is not running. Pets can also be bought from the shop for 25 diamonds. When one pet was bought from the shop, it can be bought again, this time for 50 diamonds. Since the shop resets every 24 hours, the pets and their diamond costs do, too.
+
+Skill Tree:
+
+In the skill tree, you can give your pets extra damage, and give them abilities that are activated by tapping when the pet does a certain movement. Example: If your pet is in the middle of the screen, you can tap until it starts to glow, then tap on your glowing pet to activate the ability and deal extra damage (lightning burst).
+
+
+Tap Titans 2 introduced pets into the game as a new way to advance in the game.
+
+They give helpful benefits, such as increasing tap damage, mana regeneration, hero type (melee/ranged/spell) damage, gold etc.
+
+The pet damage at levels 1-40 is calculated by the equation:
+
+Dmg = Base + DI/L(1-40) * Lvl
+
+at levels 41-80:
+
+Dmg = Base + DI/L(1-40) * 40 + DI/L(41-80) * (Lvl-40)
+
+at levels 81+:
+
+Dmg = Base+ DI/L(1-40) * 40 + DI/L(41-80) * 40 + DI/L(80+) * (lvl-80)
+
+For example, a level 1 Demos will have 750% damage and a level 10 Demos will have 2100% damage
+
+The pet bonus, at all levels, is calculated by the equation:
+
+Bonus = Base + BI/L * Lvl
+
+Pet Name	Base Damage	DI/L (1-40)	DI/L (41-80)	DI/L (81+)	Bonus Type	Base Bonus	BI/L
+Demos	600%	150%			All Damage	x1	0.1
+Nova	300%	170%	140%?	30%?	All Damage	x1	0.1
+Tempest	100%	200%			All Hero Damage	x1	0.15
+Toto	700%	160%			All Hero Damage	x1	0.15
+Basky	600%	150%			Melee Hero Damage	x1	0.2
+Cerberus	300%	200%			Melee Hero Damage	x1	0.2
+Mousy	800%	150%			Range Hero Damage	x1	0.2
+Scraps	300%	220%			Range Hero Damage	x1	0.2
+Harker	300%	220%			Spell Hero Damage	x1	0.2
+Zero	500%	180%			Spell Hero Damage	x1	0.2
+Hamy	100%	220%			Tap Damage	x1	1
+Phobos	400%	160%			Tap Damage	x1	1
+Bubbles	300%	180%			All Gold	x1	0.12
+Polly	500%	195%			All Gold	x1	0.12
+Fluffers	400%	180%			Mana Regen	+0.0	0.05
+Kit	200%	200%			Splash Damage	+0.01	0.002
+This is a chart of the Pets' total damage percentage at select levels.
+
+Pet Name	Lvl 1	Lvl 40	Lvl 80	Lvl 100
+Demos	750%	6600%		
+Nova	470%	7100%		
+Tempest	300%	8100%		
+Toto	860%	7100%		
+Basky	750%	6600%		
+Cerberus	500%	8300%		
+Mousy	950%	6800%		
+Scraps	550%	9100%		
+Harker	550%	9100%		
+Zero	680%	7700%		
+Hamy	320%	8900%		
+Phobos	560%	6800%		
+Bubbles	480%	7500%		
+Polly	695%	8300%		
+Fluffers	580%	7600%		
+Kit	400%	8200%	
+
+Artifacts are items gained using Relics. They are powerful items that can change the game, such as increasing the amount of Gold dropped by Titans or making Skills cost less mana. Some artifacts can make the game a lot quicker, whilst others can provide little help. Here's a list of all of the artifacts, listed by tier.
+
+(Thanks to /u/ElGuien for making this list. If you want to see more and how to get to stage 800+, check out this link: https://www.reddit.com/r/TapTitans2/comments/5i6yua/new_player_guide_to_stages_1800_including/?sort=confidence)
+
+Contents[show]
+Artifact Tier List: Stage 1-2699 Edit
+Tier 1 Edit
+These artifacts will help you push further, faster, giving you more equipment and skill points, which give the most bonuses early on.
+
+Book of Shadows (increase relics from prestige)
+Heroic Shield (boss gold)
+Axe of Muerte (crit chance, high AD)
+Furies Bow (pet damage)
+Fruit of Eden (melee hero damage)
+Charm of the Ancient (spell hero damage)
+The Sword of Storms (ranged hero damage)
+Blade of Damocles (all hero damage)
+Tier 2 Edit
+These are almost as good as the tier 1 artifacts, but not quite. Same idea, helping you push further faster.
+
+Heavenly Sword (All artifact damage)
+Parchment of Foresight (warcry effect)
+Aegis (warcry duration)
+Bringer of Ragnarok (fire sword effect)
+Glacial Axe (fire sword duration)
+Hero's Blade (helmet bonus)
+Lethe Water (weapon bonus)
+Amethyst Staff (Slash equipment bonus)
+Divine Retribution (all damage)
+Tier 3 Edit
+These give good bonuses or good AD so are good to have.
+
+Staff of Radiance (reduce hero cost)
+Book of Prophecy (increase gold)
+Invader's Shield (good AD)
+Forbidden Scroll (critical strike duration, good AD)
+Ring of Fealty (HoM duration, good AD)
+Laborer's Pendant (HoM effect)
+Swamp Gauntlet (Shadow Clone duration, good AD)
+Helmet of Madness (Chest equipment bonus)
+Tier 4 Edit
+Not as good as tier 3, mainly useful for a bit more AD
+
+Titan's Mask (Heavenly Strike effect)
+Elixir of Eden (Shadow Clone effect)
+Titan Spear (HoM cost)
+Oak Staff (fire sword cost)
+The Arcana Cloak (Warcry cost)
+Egg of Fortune (Chesterson chance)
+Chest of Contentment (Chesterson gold)
+Tier 5 Edit
+Useless effects or bad AD/cost scaling.
+
+Stone of the Valrunes (titan gold)
+Hunter's Ointment (shadow clone cost)
+Infinity Pendulum (Heavenly Strike cost)
+Glove of Kuma (Critical Strike cost)
+Drunken Hammer (tap damage)
+Divine Chalice (chance for 10x gold)
+Artifact Tier List: Stage 2700-3500 Edit
+S Tier Edit
+Book of Shadows
+A Tier Edit
+Parchment of Foresight - Warcry will be your main buff (buffs pet damage ultimately)
+Charm of the Ancients - Cheap and high damage boost (your main damage type is tier A, the others tier E)
+Fruit of Eden - Cheap and high damage boost (your main damage type is tier A, the other tiers E)
+Sword of Storms- Cheap and high damage boost (your main damage type is tier A, the other tiers E)
+Blade of Damocles - Cheap and decent damage boost, not as good at final 3 heroes but still very good scaling
+Furies Bow - Very high pet damage increase but high cost
+Arcana Cloak - Very high cost, cuts Warcry mana cost in half at max rank
+Aegis - Longer Warcry means less mana use for recasting
+B Tier Edit
+Heavenly Sword – Decent damage boost but expensive
+Axe of Muerte – 10% Crit decent boost to Pet Damage (Tier C and below if you have Blue Wind that gives you >40% Crit)
+Hero's Blade – Decent damage boost but high cost
+Lethe Water – Decent damage boost but high cost
+Amethyst Staff – Decent damage boost but high cost
+Divine Retribution – Decent damage boost but high cost
+Heroic Shield – Boss gold to use Midas on
+Laborer’s Pendant – More gold, decent relic spent to gold ratio
+Ring of Fealty - At maximum rank triples HoM duration
+C Tier Edit
+Book of Prophecy – Medium relic spent to gold ratio
+Titan Spear - very high cost, cuts HoM mana cost in half at max rank
+Divine Chalice – Basically 5x~ gold at max level
+Helmet of Madness – Decent gold but high cost
+Staff of Radiance - Basically 2x gold at max level
+D Tier Edit
+Chest of Contentment – (Tier C if main source of gold is Chesterson, swap with Heroic Shield)
+Egg of Fortune - (Tier C if main source of gold is Chesterson, swap with Heroic Shield)
+Glove of Kuma – Crit Chance gives decent damage boost when used with Warcry for pushing
+Forbidden Scroll - Crit Chance gives decent damage boost when used with Warcry for pushing
+Invaders Shield - Extra chance for HoM/Mana refill fairy
+E Tier Edit
+Oak Staff – Firesword becomes useless after a while
+Glacial Axe – Firesword becomes useless after a while
+Bringer of Ragnarok – Firesword becomes useless after a while
+Stone of the Valrunes - Does not affect bosses
+Drunken Hammer – Tap damage only affects Swordmaster, useless
+Infinity Pendulum – No one uses heavenly strike
+Titan's Mask – No one uses heavenly strike
+Hunter’s Ointment – No one uses shadowclone
+Elixir of Eden – No one uses shadowclone
+Swamp Gauntlet – No one uses shadowclone
+Artifacts Cost Edit
+Artifact Lvl.	1	2	3	4	5	6	7	8	9	10
+Relic Cost	1	3	6	11	19	30	46	69	102	148
+Artifact Lvl.	11	12	13	14	15	16	17	18	19	20
+Relic Cost	214	306	434	613	861	1203	1675	2323	3212	4430
+Artifact Lvl.	21	22	23	24	25	26	27	28	29	30
+Relic Cost	6094	8363	11454	15657	21365	29108	39599	53796	72990	98914
+Artifact Lvl.	31	32	33	34	35	36	37	38		
+Relic Cost	133897	181063	244605	330143	445208	599886	807680	1086657		
+Artifact List Edit
+Gold Edit
+Image
+
+Name	Tier	Max Level	Effect (Increase per level)	Damage (Increase per level)	Notes
+Book of Prophecy	3	N/A	+5% All Gold (+5%)	+30% (+30%)	
+Stone of Valrunes	5	N/A	+10% Titan Gold (+10%)	+50% (+50%)	
+Heroic Shield	1	N/A	+20% Boss Gold (+20%)	+50% (+50%)	
+Egg of Fortune	4	10	+1% Chesterson Chance (+1%)	+30% (+30%)	
+Chest of Containment	4	N/A	+10% Chesterson Gold amount (+10%)	+40% (+40%)	
+Divine Chalice	2	50	+1% 10x Gold (+1%)	+80% (+80%)	
+Duration Edit
+Image	Name	Tier	Max Level	Effect (Increase per level)	Damage (Increase per level)	Notes
+Forbidden Scroll	3	30	+2 sec. Critical Strike Duration (+2 sec.)	+150% (+150%)	
+Ring of Fealty	3	30	+2 sec. Hand of Midas Duration (+2 sec.)	+150% (+150%)	
+Glacial Axe	2	30	+2 sec. Fire Sword Duration (+2 sec.)	+150% (+150%)	
+Aegis	2	30	+2 sec. War Cry Duration (+2 sec.)	+150% (+150%)	
+Swamp Gauntlet	3	30	+2 sec. Shadow Clone Duration (+2 sec.)	+150% (+150%)	
+Mana Cost Reduction Edit
+Image	Name	Tier	Max Level	Effect (Increase per level)	Damage (Increase per level)	Notes
+Infinity Pendulum	5	20	-1 Heavenly Strike Mana Cost (-1 Mana Cost)	+90% (+90%)	
+Glove of Kuma	5	30	-1 Critical Strike Mana Cost (-1 Mana Cost)	+80% (+80%)	
+Titan Spear	4	40	-1 Hand of Midas Mana Cost (-1 Mana Cost)	+80% (+80%)	
+Oak Staff	4	30	-1 Fire Sword Mana Cost (-1 Mana Cost)	+80% (+80%)	
+The Acrana Cloak	4	40	-1 War Cry Mana Cost (-1 Mana Cost)	+80% (+80%)	
+Hunter's Ointment	5	40	-1 Shadow Clone Mana Cost (-1 Mana Cost)	+80% (+80%)	
+Equipment Bonus Edit
+Image	Name	Tier	Max
+Level
+
+Effect (Increase per level)	Damage (Increase per level)	Notes
+Hero's Blade	2	N/A	+5% Helmet Bonus (+5%)	+30% (+30%)	
+Lethe Water	2	N/A	+5% Weapon Bonus (+5%)	+30% (+30%)	
+Amethyst Staff	2	N/A	+5% Slash equipment Bonus (+5%)	+30% (+30%)	
+Helmet of Madness	3	N/A	+5% Chest equipment Bonus (+5%)	+30% (+30%)	
+Damage Edit
+Image	Name	Tier	Max
+Level
+
+Effect (Increase per level)	Damage (Increase per level)	Notes
+Drunken Hammer	5	N/A	+1% Tap Damage (+1%)	+30% (+30%)	
+Heavenly Sword	2	N/A	+105% All Artifact Damage (+5%)	+30% (+30%)	
+Furies' Bow	1	N/A	+10% Pet Damage (+10%)	+30% (+30%)	
+Fruit of Eden	1	N/A	+15% Melee Hero Damage (+15%)	+60% (+60%)	
+Divine Retribution	2	N/A	+2% All Damage (+2%)	+30% (+30%)	
+Blade of Damocles	1	N/A	+5% All Hero Damage (+5%)	+50% (+50%)	
+The Sword of Storms	1	N/A	+15% Ranged Hero Damage (+15%)	+50% (+50%)	
+Charm of the Ancient	1	N/A	+15% Spell Hero Damage (+15%)	+60% (+60%)	
+Axe of Muerte	1	20	+0.5% Critical Hit Chance (+0.5%)	+300% (+300%)	
+Effect Edit
+Image	Name	Tier	Max
+Level
+
+Effect (Increase per level)	Damage (Increase per Level)	Notes
+Parchment of Foresight	2	N/A	+20% War Cry Effect (+20%)	+40% (+40%)	
+Bringer of Ragnarok	2	N/A	+20% Fire Sword Effect (+20%)	+40% (+40%)	
+Titan's Mask	4	N/A	+20% Heavenly Strike Effect (+20%)	+40% (+40%)	
+Elixir of Eden	4	N/A	+20% Shadow Clone Effect (+20%)	+40% (+40%)	
+Laborer's Pendant	3	N/A	+20% Hand of Midas Effect (+20%)	+40% (+40%)
+
+Skill TreeEdit
+Another feature added to Tap Titans 2, is the Skill Tree. The Skill Tree can be found at the top of the main hero tab. One Skill Point is earned for every 50 NEW stages you reach. Example: The first time you reach stage 50/100/150/etc..., you will receive one Skill Point. You will not receive skill points for reaching that stage in the future.
+
+The Skill Tree has 3 different trees you can follow.
+
+The first tree focuses primarily on Pet damage, Pet abilities, and Hero abilities. These abilities are activated by tapping on the Pet/Hero when the ability is ready. The second tree focuses primarily on Hero damage and inactive perks, such as receiving more gold, advancing stages, and higher pet damage while inactive. The third tree enhances the main hero abilities (example: Higher mana regeneration, higher mana capacity, higher Flame Torch damage, etc...)
+
+Left Skill TreeEdit
+Image	Skill Name	Skill Bonus	Effect per Level	Skill Description	Max Level
+Pet: Lightning Burst	Pet Focus Tap Damage	+20	Your pet can now charge up and deal damage to Titans! Upon activation, tap continuously to power up your pet.	20
+Pet: Flash Zip	Boss Focus Tap Damage	+10	During a boss battle, your pet soars into the sky. Tap your pet while in the air for bonus damage.	20
+Pet: Heart of Midas	Gold Focus Tap Amount		King Midas has given your pet the power to generate gold. When your pet is glowing, tap them for extra gold.	20
+Ultra Heroes	Hero Focus Tap Damage		Your Heroes have mastered a secret technique, unlocking their inner power. When a Hero glows, tap on them to deal extra damage.	20
+Mighty Power	Hero Focus Tap Count	+1	More Heroes have unlocked their inner power. Increases the number of Heroes during Mega Heroes.	5
+Fairyland	Chance for Multiple Fairies		Make an agreement with the fairies and multiple fairies will show up by chance.	5
+Time Distortion	Seconds to Boss Timer	+2	By warping time, you have gained more time to fight the boss Titans. Increases boss timer.	15
+Summon Help	Clan Focus Tap Damage		Sword Masters from your Clan will now assist you. When your Clan ship glows, tap on it to summon a Clan member.	20
+Middle Skill TreeEdit
+Image	Skill Name	Skill Bonus	Effect per Level	Skill Description	Max Level
+Gold Splitter	Inactive Gold			20
+Stronger arms	Melee Hero Damage			20
+Hyper Magic	Spell Hero Damage			20
+Pinpoint Accuracy	Range Hero Damage			20
+Pet Evolution	Pet Damage			20
+Intimidating Presence	Titan Count Per Stage	-1		20
+Extended Reach	Splash Damage	+0.01%		20
+Silent March	Inactive Stage Advance			8
+Titan Family	Multiple Titan Chance			20
+Pet: Stealth	Inactive Pet Damage			20
+Right Skill TreeEdit
+Image	Skill Name	Skill Bonus	Effect per Level	Skill Description	Max Level
+Magic Fusion	Damage to Magic Fusion	+200		20
+Flame Touch	Damage to Flame Touch	+10		20
+Magic Well	Mana Regen Rate	+0.1		20
+Mana limit break	Mana Cap Increase	+10		20
+Heroic Might	Heroes Crit Damage	+ x5		20
+Midas Ultimate	Damage	+ x200		20
+Mana Siphon	Mana Steal	+0.1%		20
+Lightning strike	Chance for Lightning Strike	+0.002%		20
+Shadow Clone	Tap Damage	+ x0.01%		20
+Manni Mana	Mana Restored	+10		20
+
+Kill Titans Edit
+Image	Achievement	Tier Level	Reward
+Kill Titans	1	5
+Kill Titans	2	10
+Kill Titans	3	15
+Kill 100.00K Titans	4	
+25
+
+Kill 1.00M Titans	5	50
+Collect Gold Edit
+Image	Achievement	Tier Level	Reward
+Collect Gold	1	5
+Collect Gold	2	10
+Collect 100.00al Gold	3	
+15
+
+Collect 1.00bt/1e150 Gold	4	25
+Collect 10.00da/1e250 Gold	5	50
+Unlock HeroesEdit
+Image	Achievement	Tier Level	Reward
+Unlock Heroes	1	5
+Unlock Heroes	2	10
+Unlock Heroes	3	15
+Unlock 25 Heroes	4	25
+Unlock 31 Heroes	5	50
+Reach Hero DPSEdit
+Image	Achievement	Tier Level	Reward
+Reach Heroes DPS	1	5
+Reach Heroes DPS	2	10
+Reach 100.00al/1e50 Heroes DPS	3	
+15
+
+Reach 10.00bc Heroes DPS	4	25
+Reach 100.00cj Heroes DPS	5	50
+Kill BossesEdit
+Image	Achievement	Tier Level	Reward
+Kill Bosses
+
+1	5
+Kill Bosses
+
+2	10
+Kill Bosses
+
+3	15
+Kill 10.00K Bosses
+
+4	25
+Kill 100.00K Bosses
+
+5	50
+TapsEdit
+Image	Achievement	Tier Level	Reward
+Tap Times	1	5
+Tap Times	2	10
+Tap Times	3	15
+Tap 1.00M Times	4	
+25
+
+Tap 10.00M Times	5	50
+Reach Hero LevelEdit
+Image	Achievement	Tier Level	Reward
+Reach Heroes Level	1	5
+Reach Heroes Level	2	10
+Reach Heroes Level	3	15
+Reach Heroes Level	4	25
+Reach 50.00K Heroes Level	5	50
+Kill ChestersonEdit
+Image	Achievement	Tier Level	Reward
+Kill Chesterson 10 Times	1	5
+Kill Chesterson 100 Times	2	10
+Kill Chesterson 1000 Times	3	
+15
+
+Kill Chesterson 10.00K Times	4	
+25
+
+Kill Chesterson 100.00k Times	5	50
+Fairy PresentsEdit
+Image	Achievement	Tier Level	Reward
+Get Fairy Presents	1	5
+Get Fairy Presents	2	10
+Get Fairy Presents	3	15
+Get 5.00K Fairy Presents	4	25
+Get 50.00K Fairy Presents	5	50
+Heavenly StrikeEdit
+Image	Achievement	Tier Level	Reward
+Use Heavenly Strike Times
+
+1	5
+Use Heavenly Strike Times
+
+2	10
+Use Heavenly Strike 400 Times
+
+3	15
+Use Heavenly Strike 6.00K Times
+
+4	25
+Use Heavenly Strike Times	5	50
+Reach StageEdit
+Image	Achievement	Tier Level	Reward
+Reach Stage	1	5
+Reach Stage	2	10
+Reach Stage 1.20K	3	15
+Reach Stage 2.50K	4	25
+Reach Stage 4.0k	5	50
+Critical HitsEdit
+Image	Achievement	Tier Level	Reward
+Get Critical Hits	1	5
+Get Critical Hits	2	10
+Get Critical Hits	3	15
+Get 50.000K Critical Hits	4	25
+Get 500.00K Critical Hits	5	50
+Participate in tournamentsEdit
+Image	Achievement	Tier Level	Reward
+Participate in 1 tournament	1	5
+Participate in 10 tournaments	2	
+10
+
+Participate in 25 tournaments	3	15
+Participate in tournaments	4	25
+Participate in tournaments	5	50
+Total Pet LevelsEdit
+Image	Achievement	Tier Level	Reward
+Reach Total Pet Level	1	5
+Reach Total Pet Level	2	10
+Reach Total Pet Level 200	3	15
+Reach Total Pet Level 500	4	25
+Reach Total Pet Level 1.00K	5	50
+Collect EquipmentEdit
+Image	Achievement	Tier Level	Reward
+Collect Equipment
+
+1	5
+Collect Equipment
+
+2	10
+Collect 80 Equipment
+
+3	
+15
+
+Collect 150 Equipment
+
+4	25
+Collect 500 Equipment
+
+5	50
+Earn Skill PointsEdit
+Image	Achievement	Tier Level	Reward
+Earn Skill Points	1	5
+Earn 10 Skill Points	2	
+10
+
+Earn 40 Skill Points	3	15
+Earn 80 Skill Points	4	25
+Earn 200 Skill Points	5	50
+Kill Manni ManaEdit
+Image	Achievement	Tier Level	Reward
+Kill Manni Mana 10 Times	1	5
+Kill Manni Mana 1000 Times	2	
+10
+
+Kill Manni Mana 5000 Times	3	15
+Kill Manni Mana Times	4	25
+Kill Manni Mana Times	5	50
+PrestigeEdit
+Image	Achievement	Tier Level	Reward
+Prestige 1 Time	1	5
+Prestige Times	2	10
+Prestige 25 Times	3	
+15
+
+Prestige 125 Times	4	25
+Prestige 300 Times	5	50
+Collect RelicsEdit
+Image	Achievement	Tier Level	Reward
+Collect 10 Relics	1	5
+Collect 1.00k Relics	2	10
+Collect 5.00K Relics	3	15
+Collect 100.00K Relics	4	25
+Currently Bugged	5	50
+Own ArtifactsEdit
+Image	Achievement	Tier Level	Reward
+Own 1 Artifacts	1	5
+Own Artifacts	2	10
+Own 14 Artifacts	3	
+15
+
+Own 20 Artifacts	4	25
+Own 30 Artifacts	5	50
+Collect Hero WeaponsEdit
+Image	Achievement	Tier Level	Reward
+Collect 3 Hero Weapon Upgrades	1	5
+Collect 15 Hero Weapon Upgrades	2	10
+Collect 80 Hero Weapon Upgrades	3	15
+Collect Hero Weapon Upgrades	4	25
+Collect Hero Weapon Upgrades	5	50
+Use PerksEdit
+Image	Achievement	Tier Level	Reward
+Use 2 Perks	1	25
+Use 10 Perks	2	
+50
+
+Use 50 Perks	3	75
+Use Perks	4	
+Use Perks	5
+
+Image	Name	Description	Cost	Notes
+Make it Rain	Receive {x} Gold.	100	Gold received dependent on your current stage.
+Mana Potion	Refill your mana pool	100	Refills your mana 100%.
+Double Damage	Get double the damage on all attacks for 8 hours.	100	Double damage for 8 hours.
+Doom	Allow Sword Master to embrace the darkness, instantly killing any Titan.	50	No matter what your current Titan's HP is, it will 1 hit KO it, works on any mob, mini-boss or boss.
+Power of Swiping	Swipe to attack at max speed for 8 hours.	80	The longer your swipes, the faster it attacks. Still allows touching in one location on screen, but the speed is lowered. You can swipe to pick up coins as well.
+Clan Crate	Launch a crate full of gold for you and your clan members. You get {x} gold.	500	Little bit more gold than Make it rain on 1 use, however, not recommended if you need the gold, you would get x5 more gold using Make it Rain than using this perk once.

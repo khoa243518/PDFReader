@@ -42,30 +42,38 @@ public class PDFReader1 : MonoBehaviour {
 	string[] words;
 	void Start()
 	{
+		DebugTime ();
 		instance = this;
-
+		//trouble speed
 		if (type == TypeFile.pdf) {
 			s = PdfTextExtractor1.pdfText (path+".pdf");
-		} else if(type ==TypeFile.txt) {
+		} 
+		//
+		else if(type ==TypeFile.txt) {
 			s = System.IO.File.ReadAllText(path+".txt");
 		} else {
 			s = System.IO.File.ReadAllText(path+".srt");
 		}
+		DebugTime ();
 		s = s.Replace ("’", "'");
 		s = s.Replace ("‘", "'");
 		s = s.Replace ("�", "'"); 
 		s = s.ToLower ();
 		words = s.Split (' ','\n','\t','=','+','#','{','}','-','(','*',')',';','.',',','@','\"','?','[',']','/','_',':','!','“','”','<','>',(char)13);
-
-		Debug.Log (System.DateTime.Now.Ticks);
+		s = "";
+//		foreach (string w in words) {
+//			s += (w + " ");
+//		}
+		DebugTime ();
 
 
 
 		Load ();
+		DebugTime ();
 	}
 	public static PDFReader1 instance;
 	public void Load () {
-		Debug.Log (System.DateTime.Now.Ticks);
+		Debug.Log (System.DateTime.Now.Second);
 		for(int i = 0 ; i < list.transform.childCount;i++)
 			Destroy (list.transform.GetChild (i).gameObject);
 		list.GetComponent<RectTransform> ().anchoredPosition = Vector2.zero;
@@ -74,8 +82,12 @@ public class PDFReader1 : MonoBehaviour {
 		string text = System.IO.File.ReadAllText(@"text.txt");
 		string[] myWords = text.Split (' ');
 		int count = 0, vob = 0, expert = 0;
+		DebugTime ();
+
 		foreach (string key in dictionary.Keys.ToList())
 			dictionary.Remove (key);
+		DebugTime ();
+
 		foreach (string w in words) {
 			string wt = w;
 			if (wt.StartsWith ("'") || wt.StartsWith ("’"))
@@ -86,19 +98,25 @@ public class PDFReader1 : MonoBehaviour {
 				continue;
 			//			if (w.EndsWith ("s"))
 			//				w.Remove (w.Length - 1);
-
-			if (myWords.Contains (wt))
+			//frist trouble speed
+			if ( myWords. Contains (wt))
 				expert++;
+			//
+
+			//second trouble speed
 			if (dictionary.ContainsKey (wt))
 				dictionary [wt] += 1;
 			else {
 				dictionary.Add (wt, 1);
 				vob++;
 			}
+			//
 			count++;
+
 		}
 
-	
+		DebugTime ();
+
 		mainUI.transform.GetChild(0).GetComponent<Text>().text = "Words: " + count.ToString();
 		mainUI.transform.GetChild(1).GetComponent<Text> ().text = "Words: " + vob.ToString();
 		mainUI.transform.GetChild(2).GetComponent<Text>().text = ("Expert:" + ((float)expert/count).ToString("p1"));
@@ -120,6 +138,8 @@ public class PDFReader1 : MonoBehaviour {
 					break;
 			}
 		}
+		DebugTime ();
+
 	}
 
 	bool CheckInvalid(string w)
@@ -133,6 +153,6 @@ public class PDFReader1 : MonoBehaviour {
 
 	void DebugTime()
 	{
-		Debug.Log ("Current time : " + System.DateTime.Now.Second);
+		Debug.Log ("Current time : " + System.DateTime.Now.TimeOfDay);
 	}
 }
