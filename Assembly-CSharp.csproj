@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\AddAllToOne.cs" />
      <Compile Include="Assets\Item.cs" />
+     <Compile Include="Assets\OneByOne.cs" />
      <Compile Include="Assets\PDFReader1.cs" />
      <Compile Include="Assets\SortingAlphabet.cs" />
  <Reference Include="UnityEngine.Advertisements">

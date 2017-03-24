@@ -79,7 +79,8 @@ public class PDFReader1 : MonoBehaviour {
 		list.GetComponent<RectTransform> ().anchoredPosition = Vector2.zero;
 		//string path= @"head_first_design_patterns.pdf";
 		//string path= @"D:\games-client\pdf.pdf";
-		string text = System.IO.File.ReadAllText(@"text.txt");
+		string text = System.IO.File.ReadAllText(@"text.txt").ToString();
+		Debug.Log (text);
 		string[] myWords = text.Split (' ');
 		int count = 0, vob = 0, expert = 0;
 		DebugTime ();
