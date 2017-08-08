@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{1FB920B8-E81A-653E-8EC2-D99A21BCAC1C}") = "PDFReader", "Assembly-CSharp.csproj", "{7676BC94-1502-A011-8C9E-9AAD87507807}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFReader", "Assembly-CSharp.csproj", "{7676BC94-1502-A011-8C9E-9AAD87507807}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

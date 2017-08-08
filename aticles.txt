@@ -1,135 +1,381 @@
-1
-00:00:00,510 --> 00:00:03,472
-Navigating the Unity editor interface is easy.
+Introduction
+I previously wrote an article on Web Scraping with C# that gave an overview of the art of extracting data from websites using various techniques. That article discussed the acquisition of data from a specific webpage, but not the process of moving from one website or webpage to another and actively discovering what's out there. Some people confuse web crawling with web scraping - they are closely related, but different. Web crawling is the process of trawling & crawling the web (or a network) discovering and indexing what links and information is out there, web scraping is the process of extracting usable data from the website or web resources that the crawler brings back. So where my previous article discussed getting data from a website/page, this article will discuss approaches, concepts, tools and frameworks to crawl the web #JustLike Bingle.
 
-2
-00:00:04,094 --> 00:00:07,378
-The core of the interface consists of five main panels.
 
-3
-00:00:07,753 --> 00:00:11,543
-The Scene View, the Hierarchy, the Game View,
 
-4
-00:00:11,543 --> 00:00:15,186
-the Project panel and the Inspector panel.
+This is not meant to be an academic paper, rather it is a starting point of ideas, and things to think about to assist coders getting started in web crawling. A lot of the concepts and ideas discussed in this article are geared towards a robust, large scale architecture - having said that, there is a lot of information here that should be quite useful if you only need to crawl from one website to a few hundred. The article does cover some non core C# technologies, some of which you may not need, indeed they could well be overkill for your situation. That being said, what is important to note is the context in which these are mentioned. If your need is on a smaller scale than that described here, you can just pare back and pick and choose the bare minimum framework you require, building out yourself where neccessary
 
-5
-00:00:15,781 --> 00:00:18,782
-The Scene View is where you'll visually construct your game,
+This article is part two of a multi part series.
 
-6
-00:00:18,782 --> 00:00:22,456
-manipulating objects in 2D and 3D.
+Part one - How to web scrape using C#
+Part two - Web crawling with C# - concepts (this article)
+Part three - Web scraping with C# - point and scrape!
+Part four - Web crawling using .net - example code (to follow)
 
-7
-00:00:24,406 --> 00:00:27,416
-The Game View is where you will preview your game,
+Background
+I have had more than a curious interest for a while in the concept of a sock puppet army and web-bots, and have carried out a lot of R&D into the area, including reading some useful background research (here for example). If you are not familiar with the term, it refers to 'the use of a fake identity to artificially stimulate demand for a product, brand or service'. Puppet armies are not only used for commercial purposes however, governments for example are increasingly using them to control media and shill content to their own ends (e.g.: How the military uses Twitter sock puppets to control debate). My personal interest lies in examining the scale of these, how they are evolving, and how web scraping and crawling technologies can be used as a tool for both creating, and helping to identify, sock puppets on a large scale. I intend this article to begin as a discussion document and then evolve it later to demonstrate some code I have been researching and developing in the area.
 
-8
-00:00:27,416 --> 00:00:30,049
-and this becomes active when you hit the play button,
+Starting point
+I have already outlined that web crawling is about links, not data. Getting data, is scraping. When you are scraping, you know where and what to scrape, when you are crawling however, sometimes you know a starting point, but the direction of where you go depends on what the crawler finds once its departs from its original starting point. If you had to index the entire web, where would you start? ... perhaps with the most popular website you know about, perhaps with the listings from a DNS server, perhaps on some client web-site. Regardless of where you start, you do need to start somewhere. When you have your starting point, you then need to decide how to approach the crawl.
 
-9
-00:00:30,049 --> 00:00:33,724
-allowing you to play test at any time inside the editor.
+Deep or wide
 
-10
-00:00:34,938 --> 00:00:38,974
-The Hierarchy lists all objects in the scene in alphabetical order
+There are two main approaches to deciding how to start your crawl. You can crawl deep, or wide - both are equally useful in different circumstances. Let say we have a starting point of a website home page that has 2 links, and each of those links have other links - what we need to do is determine the best way to crawl all of the links in this spiders web...
 
-11
-00:00:38,974 --> 00:00:42,516
-and in hierarchical order in order to show parenting,
 
-12
-00:00:42,516 --> 00:00:44,519
-a way of grouping objects.
 
-13
-00:00:44,720 --> 00:00:47,237
-The Project panel shows all assets that you are
+ 
 
-14
-00:00:47,237 --> 00:00:49,176
-currently working with, in one place.
+Breadth first 
 
-15
-00:00:49,159 --> 00:00:52,448
-Giving you quick access to everything you are building your game with
+This is where we start at the top node we find on the page, and crawl the links on each page *breadth/wide*, before we go deeper on any of the linked pages. This is like crawling in rows/waves ... we start by crawling the first level of red (2,3), then when these top level links are exhausted, we go to the next level of (2,3) (green), being (4,5,6,7), when these are done we go to the next (blue), and so on. 
 
-16
-00:00:52,448 --> 00:00:56,704
-from scripts to textures, 3D models, video and audio.
 
-17
-00:00:57,299 --> 00:00:59,797
-The Inspector is a context sensitive panel
 
-18
-00:00:59,797 --> 00:01:02,055
-that shows the properties of what ever object,
+Depth first
 
-19
-00:01:02,055 --> 00:01:04,965
-asset or setting panel you've selected.
+The next major approach is to crawl deep. This means that we exhaust the deep links on each top level link before we move across to another. In depth first, we take the first link (2), go deep into that (3), from there dig deeper (4), down to (5), down to (6), **then** having exhausted the deep link, we zoom back up to the previous level (at 4), and crawl to (7), down to (8,9), back up to get (10,11), then right back up to (12), seeing that it has no links to party on up to (13), and from there down to (14,15,16...).
 
-20
-00:01:05,157 --> 00:01:07,807
-Click on something new and the Inspector immediately
 
-21
-00:01:07,807 --> 00:01:09,807
-switches to show properties of that thing.
 
-22
-00:01:13,399 --> 00:01:16,519
-The play controls allow you to play test the game,
+ 
 
-23
-00:01:16,519 --> 00:01:22,613
-pause and progress frame by frame for more detailed testing.
+There are many other approaches to web crawling, but they are usually a twist on the above two - for example, 80legs uses a hybrid, where it transverses depth or breadth first depending on which it determines is optimal at the time. In reality, if you examine the above diagrams, you can imagine that it would be inefficient to use one single thread to transverse the entire link tree. Therefore it is common to use a series of concurrent threads to carry out the crawling process, each walking down/crawling a different path, getting the overall job done faster.
 
-24
-00:01:25,185 --> 00:01:28,605
-The tools in the top left allow you to navigate the Scene View
+ 
 
-25
-00:01:28,605 --> 00:01:31,149
-and also manipulate objects visually.
+Crawl queues
+Once you have decided the method you are going to use to crawl, the next question you need to ask is how you are going to manage the process of crawling. If you think you will do all of this in memory, think again ... for all but the most simple of websites or crawls, this is a road to disaster. The reason is that using a simple recursive walk of the available link nodes will max out your stack quicker than you can blink a few times. The best approach is to create a list or queue, that you push links onto for crawling. As you move from one to the next and need to pick up a new link to crawl, you pull one from the queue. As you discover new links, you push them to the queue, waiting for discovery by the next crawl process. While a simple FIFO queue will work, for web crawling, it is not optimal. A better approach to using a simple queue, is to use a priority queue.
 
-26
-00:01:34,525 --> 00:01:38,786
-There are also toggles to allow for switching between local and world space
+Priority queues
 
-27
-00:01:38,786 --> 00:01:41,581
-and centre or pivot point based rotation.
+A priority queue is a queue system that has some kind of smart intelligence behind it - it takes the links we give it, and organizes these into some form of sensible, pre-determined order. The idea of a priority queue, is that information pushed into the queue is given a priority, and extracted according to priority - its that simple. A priority can be whatever you want it to be - you design this in yourself ...low/medium/high, low/high, low, lower, lowest, high, higher, highest, etc.... The objective of the priority queue is to allow you to filter and pop items off the queue according to a given order of importance. We may carry out a scrape and decide that all PDF file links are more important than DOCx files and thus get a higher priority. We may decide that top level domain links are more important than second level domain links .. e.g.:
+ 
 
-28
-00:01:48,000 --> 00:01:50,177
-The Layers dropdown allows you to quickly
+Link                                                Priority
 
-29
-00:01:50,177 --> 00:01:53,108
-show and hide layers of content in your game.
+Domain_1.com                              High
+Domain_2.com                              High
+SubDomain.Domain_2.com          Low
+Domain_3.com                              High
+SubDomain2.Domain_1.com        Low
+ 
 
-30
-00:01:55,646 --> 00:01:58,136
-The Layout dropdown allows you to switch between
+An item in the queue of course may contain further information, such as date crawled, where the link came from, etc. That's up to the implementation we need at the time.
 
-31
-00:01:58,136 --> 00:02:01,865
-differing layouts of the Unity interface.
+ 
 
-32
-00:01:42,499 --> 00:01:46,859
-In the top right of the interface are the layers and layout dropdowns.
+Policies and rules
+In determining what links we should crawl, what priority we need to give links etc, we usually refer to a list of policies and rules for crawling, for example:
 
-33
-00:02:07,568 --> 00:02:09,769
-This concludes the interface overview.
+is this a link/website we want to go to?
+have we already visited this link, and if so, how long ago?
+is the link in a category we want to visit (like a shopping website, or an airfares/airline booking website)
+how do we know its a site we want to crawl? ... do we need to pass the home page through a semantic analysis tool to determine content first?
+when we are looking for links, are we looking based on the link url name, or the parent page it comes from, or the inner-text the a-href anchor wraps around?
+are we looking for certain file/data types of links, such as PDF, Doc, XLS...
+when we load our web-page, and we are looking for links - where are the links?
+are they easy to get at <a href> ?
+are they event hooked? $('somebutton').click(function(){....})
+are they event-chained? (only appear when some other JS event is triggered)?
+are they in-line in the page, or pushed into the DOM on-demand from an AJAX call?
+what do we do in the case of a URL re-direct? (temp or perm)
+how long do we wait for a link to respond / timeout?
+what if a link does not exist at all?
+do we ignore, retry or report?
+when seeking links to crawl, are we are looking at the context of the link, and do we need to take the semantic context into account? i.e.: are we standardising data ... is an inner-text for 'airline price' the same as 'flight price' the same as 'cost of flight' the same as 'airfare price' ?
+if we are attempting to determine links to crawl based on link (inner) text, should we/not use techniques such as RegEx/SoundEx to map link text? or do we need to have a mapping system in place?
+when we are crawling, and encounter a site that requires a login, how do we handle that? ... remember that there can be logins required on a http level, and also on a HTML authorisation level - you should have a rule for identifying and handling both situations.
+ 
 
-34
-00:02:09,769 --> 00:02:14,892
-Continue to watch tutorials to learn more about each individual panel.
+Managing state
+Depending on how the site you are crawling is constructed, you may or may not need to manage 'state' when crawling the site. In this context, state means that the ability to move/crawl from one page to another depends on preserving some information that the server has generated, and passed to you as the client, and the server expects you to give back to it in order to move to the next page. The management of state may be done in different ways, for example, by sending additional tracking information in a URL, in a cookie, or embedded within the page content that is sent back.
+
+This is an example from an ASP.net 'ViewState' embed:
+
+ 
+
+
+
+ 
+
+Being a good web-crawling citizen
+Robots
+
+Web servers have a method for telling you if they wish to allow you, or not, to crawl websites they manage, and if they allow it, what they allow you to do. The method of passing this information to a crawler is very simple. At the root of a domain/website, they add a file called 'robots.txt', and in there, put a list of rules.
+
+Here are some examples:
+
+The contents of this robots.txt file says that it is allowing all of its content to be crawled:
+
+Hide   Copy Code
+User-agent: *
+Disallow:
+This one on the other hand disallows any crawling from the root of the website downwards (note the '/')
+
+Hide   Copy Code
+User-agent: *
+Disallow: /
+here is one that says crawl anything you like, except the photos folder:
+
+Hide   Copy Code
+User-agent: *
+Disallow: /photos
+So, in order to play nice with the server, the very first thing you should do is look for a robots.txt file in the root of the domain you are targeting.  MyDomain.com/robots.txt. If you find this file you need to parse it and should obey its rules. If you don't find it, you can proceed to crawl anywhere (within your legal boundaries of course!).
+
+Read more about robots.txt here and here.
+
+For a real-world example, here are some extracts from the Amazon.co.uk website Robots.txt file:
+
+Hide   Copy Code
+User-agent: *
+Disallow: /exec/obidos/account-access-login
+Disallow: /exec/obidos/change-style
+Disallow: /exec/obidos/flex-sign-in
+Disallow: /exec/obidos/handle-buy-box
+Disallow: /exec/obidos/tg/cm/member/
+Disallow: /exec/obidos/refer-a-friend-login
+Disallow: /exec/obidos/subst/partners/friends/access.html
+Disallow: /exec/obidos/subst/marketplace/sell-your-stuff.html
+Disallow: /exec/obidos/subst/marketplace/sell-your-collection.html
+Disallow: /gp/cart
+Disallow: /gp/customer-media/upload
+Allow: /wishlist/universal*
+Allow: /wishlist/vendor-button*
+Allow: /wishlist/get-button*
+Disallow: /gp/wishlist/
+Allow: /gp/wishlist/universal
+User-agent: EtaoSpider
+Disallow: /
+# Sitemap files
+Sitemap: http://www.amazon.co.uk/sitemap-manual-index.xml
+Sitemap: http://www.amazon.co.uk/sitemaps.f3053414d236e84.SitemapIndex_0.xml.g
+
+Be gentle / play nice
+
+While we may write our web-crawlers to travel at light-speed, and deploy them on a distributed network of the very latest super duper uber fast processor machines, we always have to be aware that the target server we are crawling may not be able to withstand being bombarded with a gazillion crawlers at once.
+
+
+
+I have encountered instances where I was crawling websites with one thread, and to be gentle on the target server, I inserted delays between calls and things were fine. On the same server however, when I opened the throttle slightly and let a mere 2..3 more threads crawl the server, it repeatedly crashed ... it had not blocked me for a potential denial of service attack, no, it crashed, resulting in a phone call from me to the host to ask for a reboot. This is the severe end of the spectrum and does not happen often, but the message is very simple - be very careful and gentle when crawling servers. It is good practise to try to implement some form of intelligent monitor metric to measure how the target server is reacting to your crawler, to allow you to open or tighten the crawl throttle automatically as needed.
+
+You should also take careful note of the 'terms and conditions' or 'terms of use' of any website you are crawling - while some are 'open for business', others have legal restrictions that they like to impose on what you can and cannot do on their site, including crawling. In general, it can be said that if something is on the open web, its fair game for automated reading (crawling/scraping) (but not re-use, thats a different story). If however something is behind a paywall, or a user has had to agree to a specific set of T&C to get access using a specific login, then different rules apply and you *do absolutly need to pay attention* to the T&C. Ryan MItchell has a good quick blog post on the subject of what you can/can't do.
+
+By way of example of a website T&C in relation to crawling/scraping, here are some extracts from the terms of use from the Apple website (yes, go ahead, laugh, I do actually read these things!!):
+
+Quote:
+You may not use any “deep-link”, “page-scrape”, “robot”, “spider” or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Site ... Apple reserves the right to bar any such activity... You agree that you will not take any action that imposes an unreasonable or disproportionately large load on the infrastructure of the Site
+
+Its in your best interests to identify blocks like this before you do anything on a large scale take legal advice is always the best advice !
+
+Finally, be aware that crawling some links trigger server-side actions, that can cause server strain, so be careful. An example of this is a server I was crawling that had a series of links that when followed, would trigger the generation of a very lengthy report that tied up the server for anywhere from 2..7 minutes at a time - very inefficient indeed, but it was what I was dealing with, so had to cater for it. The message here is don't assume that you can hit a server with impunity. You need to ensure you are playing nice and be prepared to back off if needed.
+
+
+Schedule your crawl
+
+Apart from keeping an eye on how aggressively you crawl a server, you should also be cognisant of the fact that servers can be under more pressure at certain times of a day. The time of day the server is busy at can be determined by the market it serves (time zones) and there can also be for example activity burst times (if it is a sports site there may be a heavier use during and around the time of a big game). So when you are planning a crawl, take the timing into consideration. Apart from taking an intelligent approach to timing, you should also check if the site you are indexing has a 'minimum ping delay' - that is, the minimum amount of time they expect robots/crawlers to wait before coming back for a subsequent reindex.
+
+What can go wrong
+In general, when we crawl for web links, we are going to be doing it using a series or pool of threads - its the most efficient way to do it. When we use threads, we need to be extremely careful that they are executed in a safe manner, and that if something goes wrong, we handle it gracefully, and recover. Here are some of the things that can go wrong - we need to identify and handle each of these as we encounter them:
+
+Server response codes are codes sent to the client, by the server to indicate a particular state. They range from informational/success messages such as 'ok', to redirect flags (temp redirect 307, perm 301). 400 errors are client errors (404, page not found), and 500 errors are generated by the server (e.g.: 500 internal server error). See here for more detailed information on error codes.
+Timeout - if the URL call times out - the server does not respond - how to handle it?
+retry / re-queue?
+die?
+report?
+Loops/recursive/cyclical links - we need to ensure that we monitor that we are not getting caught in infinite loops, even deep ones - this can kill our crawl strategy over time resulting in endless wasted resource calls - consider having a blacklist or an 'already visited' list that you check against before allowing your priority queue to make a link available for crawling
+Internet speed - what if your connection drops, or the server is overloaded at the time you hit it and it takes just *that little bit too long* to respond?
+You have too many threads open - what is your crawlers impact on the server it is hosted on? ... do you need to monitor memory usage to cater for this issue? (heres a hint, you do!)
+Maximum threads - there is a limit (depending on what you are doing), to the amount of threads you can have crawling concurrently (and its different in windows versus UNIX) - you need to take this into account
+ 
+
+Wash, rinse, repeat...
+It is said that as soon as a reference book is written, it is out of date - the reason is simply that most things don't stay stable, they change, and this is really important from a web crawling point of view. When we go and crawl a site, before we are even finished, its content may have changed. So if we are doing a crawl, we not only have to know where to start and finish, we also have to know when to start again! 
+ 
+
+
+
+
+Watch me disappear 
+
+While not strictly the domain of the web crawler, the ability to monitor a webpage and inform the crawler that something has changed and a site needs to be reindexed is an integral part of the overall crawling system. In essence, for this to happen, we need to know not only what should be at a link, but also what should not.  
+There are many approaches to identifying the changes we need to see - these range from the simple to the complex. 
+
+For a relatively relatively static page (simple), we could take a HASH snapshot, and compare a before and after. For more complex (and scalable) implementations, we could investigate the use of 'Bloom filters'. Described by Burton Howard Bloom in 1970 as:
+
+Quote:
+Very space-efficient probabilistic data structure that is used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not, thus a Bloom filter has a 100% recall rate. In other words, a query returns either "possibly in set" or "definitely not in set".
+source: w/pedia.
+
+The bloom filter is an extremely useful and highly efficient structure that we can use to answer the questions of “whats changed”, “whats new” etc.  Here are some examples of how big companies with big problems have successfully used Bloom filters to solve similar issues that we encounter when web crawling:
+
+Google BigTable, Apache HBase and Apache Cassandra use Bloom filters to reduce disk lookups for non-existent data.
+The Google Chrome web browser used to use a Bloom filter to identify malicious URLs. 
+The Squid Web Proxy Cache uses Bloom filters for cache digests.
+Bitcoin uses Bloom filters to speed up wallet synchronization.
+The Venti archival storage system uses Bloom filters to detect previously stored data.
+Medium uses Bloom filters to avoid recommending articles a user has previously read. source: w/pedia
+You will get a good bit of reading material around bloom filters and c# if you go and bingle it. Here is one example implementation of such a bloom filter in C# by Venknar.
+
+With pages that have content that changes dynamically (complex), we generally need to have the ability to break the link target page into element groups, and examine both the groups individually, and as a whole, to determine the change state (if any). We can use different tools and techniques to assist in this analysis, for example RegEx, and template reduction are but two. It is reasonably easy to look at some HTML/CSS code and see repeating patterns. These are either roll-your-own code blocks where DIVs and other elements repeat, or, we can clearly see framework repeats such as KnockoutJS 'data-bind="foreach:', and AngularJS 'ng-repeat=..'. The concept of template reduction is stripping back the data to the core original template and using this to help determine if the link target page design has changed rather than the data content.
+
+If you would like to dive deep into this area (fascinating!), you could have a look at some of the following:
+
+A fast HTML web page change detection approach based on hashing and reducing the number of similarity computations 
+Parallel crawler architecture and web page change detection
+Automatic detection of fragments in dynamically generated web pages
+Focused Web Crawler with Page Change Detection Policy
+The location for the change detection should I believe be within the realm of the Guvnor system - not as a core part, but a critical side process that is called on a frequent basis, but perhaps as a separate, but supporting process.
+
+While monitoring changes, and keeping an eye on 'knowing what you dont know' is important, equally important when carrying out large scale crawl is the ability to identify when something new appears. When dealing with very large databases of scraped records relating to crawled links, it may be better to work out a strategy for identifying new kids on the block without having to directly query large portions of your database, or equally as important, re-traversing every single link on a target site. If you have an ever increasing set of data, the last thing you want to have to do is do a recursive scan everytime you *think* you have come across something new, either on the target site or your own database. The guys over at semantics3.com give a nod in this direction in their article 'Indexing an e-commerce store can be quite an Amazonian adventure', where they state:
+ 
+
+Quote:
+The challenge in detecting a new product is not to compare each potential product with the existing database of millions of products. Our scientists use an intelligent product ranking algorithm to tackle this issue. Search is done by categories of products rather than individual products reducing the processing time required. We can find all the new products on any retailer within 24–48 hours (by which time newer products have already been introduced!)
+
+ 
+
+What they are saying is that in this case, rather than scan for "select * pages and look for new ones", they are saying - "select * from categories and look for new entries" ... a far far smaller deal from a crawl and scrape point of view. The message here is when you are trying find out questions like:
+
+whats new?
+has anything changed on this page since I last visited?
+does the link still exist?
+Dont simply go bull-headed into a big crawl-franzy, rather, think things through carefully, and look for ways of getting the information you require, that require the least processing and least churn of both your resources, and the web resources of the crawl target website.
+
+ 
+
+How to manage / optimise
+Having taken the previous concepts onboard, the next thing we need to consider is pulling it all together into a robust, performant, scalable architecture. Whether or not someone has already built a framework we can build on, there are things we can learn from the giants that have gone before. The giants that already do things at scale, in for example Facebook, Microsoft and Google, can teach us many things both directly and indirectly. Two projects that come to mind immediately are Hadoop and MongoDB. Both of these technologies are designed to solve problems of scale extremely well, and both can handle large volumes of data. 
+ 
+
+Who's in charge? - the Guvnor!
+
+In many mechanical systems, you will come across a 'Governor' ... in the case of the wonderful drawing below, it is a hardware implementation of a set of rules, that according to input, regulate and manage the correct and efficient operation of a system. In ye olden English times, a manager was (and sometimes still is) referred to as the 'Guv'ner'.
+
+ 
+
+
+ 
+
+(ps: if you have a few minutes to spare after completing this article, and want a really cool aside read, have a gander at this great description of governors on diesel locomotive engines.)
+
+
+One of the common patterns you will see emerging in large scale systems is the central replicated manager. In most cases, this manager acts as a traffic controller for a network of distributed worker nodes. In the case of our crawler architecture, we could use such a manager to serve jobs to worker nodes, take results back in, and monitor to ensure everything is running smoothly. While the concept of the Guvnor is to be the top level manager, naturally for purposes of scaling, performance and resilience, the Guvnor itself may be a collection of smaller engines that as a group of connected systems, make up the master controller.
+
+Before going off to look at developing your own guvnor from scratch, see whats out there, what can take the position of the Guvnor, or assist the Guvnor. Gearman for example 'provides a generic application framework to farm out work to other machines or processes that are better suited to do the work'. There are two relevant distributions for the .Net community, GearmanSharp, and Gearman.net. You can get more information on the Gearman downloads page.
+ 
+
+
+
+As a humourous aside, I saw GearMan described as:
+
+Quote:
+"GEARMAN - The Manager ...
+
+because it dispatches jobs to be done, but does not do anything useful itself" :)
+
+Distributed worker nodes
+
+Some of the things we have learned from Hadoop are the concepts of map/reduce, and handing small jobs off to 1..n distributed machines to 'share the workload'. Large scale projects like Hadoop and others have also taught us that in most situations, a well designed architecture will scale better by fanning out, rather than up. When building a system we wish to grow, using this scale out pattern can be very beneficial. In the case of our web crawler architecture, we could design lightweight worker nodes that are nothing more than very basic pluggable runner shells. The objective of these would be as follows:
+
+to start up (in thread pool)
+contact the Guvnor for instructions
+optionally download/install a lightweight code plugin (else use existing default)
+run an abstract 'execute' method in default/new plugin
+complete crawl/other task
+report results back to Guvnor
+die, or go back to Guvnor for further work (latter more efficient)
+By using a cluster of distributed worker nodes in this manner, we can scale in a highly efficient way, using our Guvnor to manage and spin up/down virtual machines on the fly, as needed.
+ 
+
+Managed priority queues
+
+We discussed earlier the concept of a priority queue. A queue of this type is not very index heavy, and is very well suited for example to a simple, incredibly fast and highly scalable dictionary based database system such as Redis or Riak. Both of these systems can be easily used as a FIFO database *with priority*.
+
+
+
+The benefits of using an existing solution such as these when dealing with a large system are clear - they save us enormous amounts of development time, are tried and tested at scale, and most important, serve the purpose at hand. Now, this is not to say that these are the only solutions that can be used - simply that they seem to fit the bill. When considering a technology you should always consider not only if it is suitable for the task at hand, but also if you have the skill-set and resources to work with it *this is key*.
+
+Joining the dots
+
+While we might use a dictionary database to keep tabs on our crawl queue, we may consider other technologies to assist us in managing the data we acquire, and the relationships between the links we acquire. Remember that when crawling the web, we not only need to know where we are going, but where we have gone, and how where we have visited relates to where we will visit (phew, I know, a spiders web!). Many eons ago, it was considered good practise to try to make everything fit into the one technology stack. This is no longer the case. Find and use the best tools for the job at hand - don't try to bend things to your will if it makes more sense to simply hook things together.
+
+
+
+In this way, we might consider using something like SQL Server or MongoDB to store the more advanced data we have gathered during our crawls, and then using something more suited to deep and complex object linking to managing relationships between our links. In this regard I refer to the incredibly useful graph databases that have emerged over the past number of years. Of note would be Neo4J and VelocityDB/Graph. Find out a bit more about graph databases from the oracle of all of the things,  tricki-pedia.
+
+ 
+
+Technologies to consider
+Languages and frameworks
+
+In general, for a small scale job that has to be done fast, I normally recommend sticking to what you know. If you have some time, and can afford to use the job as a work learning piece, then knock yourself out and try something new. The beauty of the .net ecosystem, is that you can (almost) use different languages such as VB.net, C# and F# side by side, in that you can call code from one class/assembly written in one language from another. When you are faced with a situation where you need to convert from one language to another, sometimes this is a good approach - basically doing a 'surround and replace' on the old code with the new.
+
+C# is a very capable language and I have used it extensively for crawling and scraping. If you are excited by the opportunities offered however by languages from the functional family, it may be worth your while looking at some of the efficiencies that can be gained by using F# for crawling and scraping. This F# sample code by Tomas Petricek illustrates how to use F# to crawl. If you've never played with F# or a functional language, you will be surprised how readily clear it is - worth a read!
+
+Finally, on languages, if you are in the mood for learning and standing on t he shoulders of giants, you could also consider investigating some of the very fine libraries available Web Scraping and Crawling for the Python language - this is now also supported in the .net eco-system.
+
+There is an interesting web crawling framework that I recently came across that covers off a lot, but not all of what we have discussed so far in this article. Called ABot, Its certainly worth a look and some strong consideration. To use the words of the maintainer:
+ 
+
+Quote:
+Abot is a C# web crawler built for speed and flexibility.
+
+Abot is an open source C# web crawler built for speed and flexibility. It takes care of the low level plumbing (multithreading, http requests, scheduling, link parsing, etc..). You just register for events to process the page data. You can also plugin your own implementations of core interfaces to take complete control over the crawl process. Abot targets .NET version 4.0.
+
+What's So Great About It?
+
+Open Source (Free for commercial and personal use)
+It's fast!!
+Easily customisable (Pluggable architecture allows you to decide what gets crawled and how)
+Heavily unit tested (High code coverage)
+Very lightweight (not over engineered)
+No out of process dependencies (database, installed services, etc...)
+Runs on Mono
+
+I will be doing a walk-through of the framework in a later article as it does show a lot of promise. The great thing of course about this and other OOS projects, if that if they don't meet your need exactly, you can easily branch and do your own thing.
+ 
+
+Platforms
+
+Unless you have been living on an island somewhere, you cannot help but have noticed the seachange of activity going on at Microsoft at the moment. The sheer amount of code that is being open-sourced, and ported to operate on *true* multi-platform is astounding, especially given their history with OSS. Really, this is a *huge* deal, and one that I welcome with open arms. We all know that over the years the Microsoft operating platform has bloated (as have many), and is of course heavily desktop focused. This is not to say that the MS servers aren't good, no, I am just pointing out that for a vast majority of *generic* server based applications, you simply don't need a graphic user interface, period. The point I am making here, is that in this cloud-centric world we now work, you should strive to look critically at the application of your code, and decide if it really *needs* to sit on a graphic based OS. If its doesn't, then you should look to see what you can do to move it to an alternative. As of early 2016, if you want to use your .net code on a non graphic OS, you have some good options. The first is to compile and run your code on MONO. This is a low level port of the .net OS that runs on certain UNIX based systems. The second option is to target the new 'headless' MS Server platform known as 'NANO' - while still early days (Q1/2016), it is expected that this 'cloud first' OS will offer huge benefits for large infrastructure style applications, and may well be very useful for a large-scale web crawling installation.
+ 
+
+Quote:
+Nano Server is a deeply refactored version of Windows Server with a small footprint and remotely managed installation, optimised for the cloud and a DevOps workflow.  It is designed for fewer patch and update events, faster restarts, better resource utilisation and tighter security. Informed directly by our learnings from building and managing some of the world’s largest hyperscale cloud environments, and available in the next version of Windows Server, Nano Server focuses on two scenarios:
+
+Born-in-the-cloud applications – support for multiple programming languages and runtimes. (e.g. C#, Java, Node.js, Python, etc.) running in containers, virtual machines, or on physical servers.
+Microsoft Cloud Platform infrastructure – support for compute clusters running Hyper-V and storage clusters running Scale-out File Server.
+Nano Server will allow customers to install just the components they require and nothing more. The initial results are promising.  Based on the current builds, compared to Server, Nano Server has:
+
+93 percent lower VHD size
+92 percent fewer critical bulletins
+80 percent fewer reboots
+ 
+
+Attached code
+I attach some sample code that demonstrates using Threads to get data from a website. It is from a previous article on threading I wrote and is relevant from a threading point of view. I will be providing further useful web-crawling demonstration code over the next short while.
+
+ 
+
+Summary
+That completes the basics of this article. The next in the series will cover implementation of code.
+
+Finally - If you liked this article please give it a vote above!!
+
+ 
+
+History
+24 March 2016 - Version 1 (including a big editor crash that unfortunately lost a lot of the article!)
+26 March 2016 - Version 2 - added section about overall architecture
+30 March 2016 - Version 3 - minor corrections, links.
+3 April 2016 - Version 4 - example of Amazon robots file added, additional relevant links added
+4 April 2016 - Version 4.1! - added information on Bloom filters and their use in a crawl engine
+5 Apr 2016 - Version 4.2 - added information on T&C, some corrections
+7 Apr 2016 - Version 4.3 - revised copy and new link article added
+
+ 
+
+
+License
+This article, along with any associated source code and files, is licensed under The Code Project Open License (CPOL)
